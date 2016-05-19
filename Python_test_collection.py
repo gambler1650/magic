@@ -1,3 +1,4 @@
+# test
 import openpyxl
 import xlrd
 import xlsxwriter 
@@ -43,7 +44,9 @@ class CardCollection:
         #this  gets 5 sequential items 
         for col in range(2,7):
         	# XXXX find a way to convert number to string 1.0 to 1 --> find out where to add it int()
-            cardInfo.append(my_sheet.cell(rowIndex,col).value)
+            cardInfo.append(my_sheet.cell(rowIndex,col).value)	magic/
+
+
         # gets location
         cardInfo.append(my_sheet.cell(rowIndex,11).value)
         #print( 'the list of cardinfo:  ', cardInfo)
